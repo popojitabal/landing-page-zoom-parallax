@@ -1,0 +1,72 @@
+.text-color {
+    color: white
+}
+.container{
+    height: 200vh;
+    position: relative;
+}
+.sticky{
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    height: 100vh;
+
+}
+.element{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .elementContainer{
+        position: relative;
+        width: 25vw;
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    &:nth-of-type(2){
+        .elementContainer{
+            top: -15vh;
+            left: -15vw;
+            height: 25vh;
+            width: 25vh;
+            transform: scale(-1, -1);
+        }
+    }
+    &:nth-of-type(3){
+        .elementContainer{
+            top: -15vh;
+            left: 15vw;
+            height: 25vh;
+            width: 25vh;
+            transform: scale(-1, -1);
+        }
+    }
+    &:nth-of-type(4){
+        .elementContainer{
+            left: 15vw;
+            bottom: -15vh;
+            height: 25vh;
+            width: 25vh;
+            transform: scale(1, 1);
+        }
+    }
+    &:nth-of-type(5){
+        .elementContainer{
+            bottom: -15vh;
+            left: -15vw;
+            height: 25vh;
+            width: 25vh;
+            transform: scale(1, 1);
+        }
+    }
+}
+
+
+
